@@ -1,0 +1,65 @@
+body.dark-mode {
+    background-color: black;
+    /* Dark mode background color */
+    color: #f2f2f2;
+    /* Dark mode text color */
+}
+body.dark-mode header{
+    background-color: black;
+}
+body.dark-mode li a{
+    color: white;
+}
+body.dark-mode h1 {
+    color: #f2f2f2;
+    /* Dark mode text color */
+}
+
+body.dark-mode ::placeholder {
+    color: #f2f2f2;
+    opacity: 0.3;
+    /* Dark mode text color */
+}
+body.dark-mode input {
+    color: white;
+    /* Dark mode text color */
+}
+body.dark-mode .input-item:hover{
+    
+    background-color: gray;
+    /* Dark mode text color */
+}
+body.dark-mode .input-item:hover::placeholder{
+    
+   color: black;
+    /* Dark mode text color */
+}
+body.dark-mode .feedback-input:hover{
+    
+    background-color: gray;
+    /* Dark mode text color */
+}
+body.dark-mode #profilepic{
+    background-color: black;
+}
+body.dark-mode .profileCard{
+    box-shadow: 0 0 18px white;
+}
+
+body.dark-mode .about-section{
+    background-color: black;
+}
+body.dark-mode .about-section p{
+    background-color:black;
+    color: white;
+}
+body.dark-mode .about-section h1{
+    color: #D8BFD8;
+}
+body.dark-mode #toggleButton{
+    background-color: black;
+}
+body.dark-mode i{
+    color: white;
+   
+}

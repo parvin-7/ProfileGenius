@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+
+header {
+    background-color: white;
+    padding: 25px;
+    
+}
+
+
+#toggleButton {
+    /* display: inline-block; */
+    margin-left:1460px; 
+    margin-top: 9px;
+    background-color: #D8BFD8;
+    cursor:pointer;
+   
+}
+
+button i {
+    margin-right:5px;
+    size: 20px;
+    /* border-radius: 50%; */
+    
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin-top: 20px;
+    /* margin-left: 30px; */
+}
+li{
+    float: left;
+}
+
+
+li a {
+    color: black;
+    font-size: 20px;
+    text-decoration: 0;
+    outline: 0;
+    font-weight: 900;
+    display: inline-block;
+    padding: 16px 16px;
+    letter-spacing: .1rem;
+}
+
+
+li :hover {
+    background-color: white;
+    color: black;
+    /* opacity: 0.6; */
+    /* width: 10px;
+    height: 10px; */
+}
+p {
+    font-size: 12px;
+    color: black;
+    /* margin: 0px; */
+    padding-left: 13px;
+    padding-top: 13px;
+    font-weight: 300;
+    margin-left: 30px;
+}
+h1,h2{
+    color: black;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-left: 40px;
+    font-size: 27px;
+}
+.about-section {
+    max-width: 800px;
+    margin: 20px 0px 0px 120px;
+    background-color: #fff; /* White background color for the about section */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for the about section */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for the about section */
+  }
+  
+  footer {
+    background-color: #D8BFD8;
+    padding: 15px;
+    text-align: center;
+    margin-top: 100px;
+  }
+  p1{
+    
+  }
+  .copyright {
+    margin-top: 0px;
+    font-size: 15px;
+    color: black;
+    font-family: ;
+  }
+  
+  

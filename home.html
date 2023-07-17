@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfileGenius</title>
+    <link rel="website icon" type="png" href="https://cdn.pixabay.com/photo/2019/08/11/18/59/icon-4399701_1280.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="dark-mode.css">
+    
+    <script>
+        // your_script.js
+
+// Function to toggle the dropdown
+function toggleDropdown() {
+    const dropdownList = document.getElementById('dropdownList');
+    dropdownList.classList.toggle('active');
+  }
+  
+  // Function to show the selected page
+  function showPage(pageUrl) {
+    fetch(pageUrl)
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('pageContent').innerHTML = html;
+      })
+      .catch(error => {
+        console.error('Error loading page:', error);
+        document.getElementById('pageContent').innerHTML = '<p>Error loading the page.</p>';
+      });
+  }
+  
+  // Add event listeners to each page link
+  document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('#dropdownList a');
+    links.forEach(link => {
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+        const pageUrl = event.target.getAttribute('href');
+        showPage(pageUrl);
+      });
+    });
+  });
+  
+  
+    </script>
+    
+</head> 
+
+<body>
+    <header>
+        
+            <nav>
+                <ul>
+                    
+                        
+                        
+                    
+                        
+                           
+                        
+                    <div class="dropdown-content" id="dropdownList">
+                        <!-- List of HTML pages will be dynamically added here -->
+                    </div>
+                   <li <button id="list-icon"><i class="fa-solid fa-bars"></i></button></li>
+                    
+                   
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="about-us.html">About us</a></li>
+
+                    <div id="toggleButton" onclick="toggleDarkMode()"><i class="fa-solid fa-moon fa-2xl"></i></div>
+                    <p id="lists">
+                        <a href="home.html">Home</a>
+                        <a href="contact.html">Contact us</a>
+                        <a href="about-us.html">About us</a>
+                            
+                        </p>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- <div id="Allservices">
+        <h2>Make a life-changing career in tech</h2>
+        <div class="services">
+            <a href="#Profile-card">Build a Profile card to showcase what you really have been</a>
+            <a href="#Resume-Builder">Build your Resume to boost your career growth</a>
+        </div>
+    </div> -->
+
+    <div id="Profile-card" class="card-input">
+        <h1>Get Your Profile Card</h1>
+        <form id="profileForm" autocomplete="on">
+            <label for="username"><input class="input-item" id="username" type="text" name="username"
+                    placeholder="Username" maxlength="20" required autocapitalize="word"></label>
+            <br>
+            <label for="email"><input class="input-item" id="email" type="email" name="email" placeholder="Email"
+                    maxlength="30" required></label>
+            <br>
+            <label for="languages"><input class="input-item" id="languages" type="text" name="languages/skills"
+                    placeholder="Languages/skills"></label>
+            <br>
+            
+            <label for="work-professionn"><input class="input-item" id="work-profession" type="text"
+                    name="work-profession" placeholder="Work-profession"></label>
+            <br>
+            <label for="experience"><input class="input-item" id="experience" type="text" name="experience"
+                    placeholder="Experience"></label>
+            <br>
+            <!-- <label for="hobbies"><input class="input-item" id="hobbies" type="text" name="hobbies" placeholder="Hobbies"></label>
+                <br> -->
+            <label for="profilepic"><input class="input-item" id="profilepic" type="file" name="profilepic"
+                    accept="image/*"></label>
+            <br>
+            <label for="linkedin"><input  class="input-item" id="linkedin" type="text" name="linkedin" placeholder="Linkedin profile"></label><br>
+                <label for="twitter"><input   class="input-item" id="twitter" type="text" name="twitter" placeholder="Twitter profile"></label><br>
+                <label for="github"><input    class="input-item" id="github" type="text" name="github" placeholder="Github profile"></label>
+                <br>
+
+            <input type="submit" value="SUBMIT">
+        </form>
+    </div>
+    
+        <div id="profileCards"></div>
+
+        <select  id="downloadFormat" style="display: none;">
+            <option value="png">PNG</option>
+            <option value="html">HTML</option>
+            <option value="pdf">PDF</option>
+          </select>
+          <button id="downloadButton" style="display: none;" >Download</button>
+        
+        <!-- <button id="downloadPNGButton" style="display: none;">Png Download</button> -->
+            <!-- <button id="downloadHTMLButton" style="display: none;">Html Download</button> -->
+            <!-- <button id="downloadPDFButton" style="display: none;">PDF Download</button> -->
+    </div>
+    <div id="Resume-Builder" class="Resume-input">
+            <h1>Create A Professional Resume</h1>
+            
+                <form id="resumeForm">
+                    <label for="fullname"><input class="input-item" id="fullname" type="text" name="fullname"
+                        placeholder="Fullname" required></label>
+                <br>
+                    <label for="Email"><input class="input-item" id="Email" type="email" name="Email"
+                        placeholder="Email" required></label>
+                <br>
+             <!-- <label for="Linkedin"><input  class="input-item" id="Linkedin" type="text" name="Linkedin" placeholder="Linkedin profile"></label><br> -->
+
+                    <label for="contactNo"><input class="input-item" id="contactNo" type="tel" name="contactNo"
+                        placeholder="Contact-No" required></label>
+                <br>
+                    <label for="address"><input class="input-item" id="address" type="text" name="address"
+                        placeholder="Address" required></label>
+                <br>
+                
+                <label for="education"><input class="input-item" id="education" type="text" name="education"
+                    placeholder="Education (sr & sr sec)" required></label>
+            <br>
+                <label for="Experience"><input class="input-item" id="Experience" type="text" name="Experience"
+                    placeholder="Experience" required></label>
+            <br>
+                <label for="skills"><input class="input-item" id="skills" type="text" name="skills"
+                    placeholder="Skills" required></label>
+            <br>
+                <label for="hobbies"><input class="input-item" id="hobbies" type="text" name="hobbies"
+                    placeholder="Hobbies" required></label>
+            <br>
+            
+            <label for="profilepic"><input class="input-item" id="profilePic" type="file" name="profilepic"
+                accept="image/*"></label>
+             <!-- <label for="twitter"><input   class="input-item" id="twitter" type="text" name="twitter" placeholder="Twitter profile"></label><br>
+             <label for="github"><input    class="input-item" id="github" type="text" name="github" placeholder="Github profile"></label>
+            <br> -->
+                    <!-- Add more input fields for other details like education, experience, skills, etc. -->
+                    <input type="submit" value="SUBMIT">
+                </form>
+        </div>
+        
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.3/html2canvas.min.js"></script>
+    <script src="https://kit.fontawesome.com/f2053ca4e1.js" crossorigin="anonymous"></script>
+    <script src="dark-mode.js"></script>
+    <script src="home1.js"></script>
+</body>
+
+</html>
