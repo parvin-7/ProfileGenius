@@ -60,6 +60,9 @@
   #list-icon i{
     padding: 5px;
   }
+p, a{
+    display:none;
+}
   ul {
     list-style-type: none;
     overflow: hidden;
