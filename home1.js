@@ -44,11 +44,11 @@ document.getElementById('profileForm').addEventListener('submit', function(event
       <div class="vl"></div>
       <p5>${experience}</p5>
       </div>
-      <div id="social-links">
-      <a target="_blank" class="social-link" rel="noopener" href="${linkedin}" ><span class="icon1"><i class="fa-brands fa-linkedin"></i></span></a>
-      <a target="_blank" class="social-link" rel="noopener" href="${twitter}" ><span class="icon2"><i  class="fa-brands fa-twitter"></i></span></a>
-      <a target="_blank" class="social-link" rel="noopener" href="${github}" ><span class="icon3"><i class="fa-brands fa-github"></i></span></a>
-      </div>
+      // <div id="social-links">
+      // <a target="_blank" class="social-link" rel="noopener" href="${linkedin}" ><span class="icon1"><i class="fa-brands fa-linkedin"></i></span></a>
+      // <a target="_blank" class="social-link" rel="noopener" href="${twitter}" ><span class="icon2"><i  class="fa-brands fa-twitter"></i></span></a>
+      // <a target="_blank" class="social-link" rel="noopener" href="${github}" ><span class="icon3"><i class="fa-brands fa-github"></i></span></a>
+      // </div>
       
       `;
       // <p4>${hobbies}</p4>
